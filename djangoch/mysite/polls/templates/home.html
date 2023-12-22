@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content%}
+    <br/>
+    <h1> Welcome to Django API</h1>
+    <br/>
+    <div>
+        <p> Iam Gourav</p>
+    </div>
+
+    <div>
+        {% for item in all %}
+            <p>{{item.first_name}} {{item.last_name}}<br/>
+                Gender : {{item.gender}}<br/>
+                Age : {{item.age}}<br/>
+                Email : {{item.email}}<br/>
+
+            </p>
+        
+        {% endfor %}
+{% endblock %}
